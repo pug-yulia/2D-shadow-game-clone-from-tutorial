@@ -1,0 +1,31 @@
+#canvas1 {
+    /*border: 5px solid rgb(0, 0, 0);*/
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* Using the top: 50% and left: 50% CSS properties along with the transform: translate(-50%, -50%) 
+    property is a common technique used to center an element both horizontally and vertically on a web page.
+    The top: 50% and left: 50% properties set the top and left positions of the element to 50% of its parent container, 
+    which effectively moves the element to the center of the container horizontally and vertically. 
+    However, this alone will not center the element perfectly, because the top left corner of the element 
+    will still be positioned at the 50% point.
+    To fix this issue, the transform: translate(-50%, -50%) property is used to shift the element 
+    by 50% of its own width and height, relative to its current position. This centers the element precisely, so that 
+    its center point is aligned with the center point of its parent container.
+*/
+    width: 600px;
+    height: 600px;
+}
+
+.controls {
+    position: absolute;
+    z-index: 10;
+    top: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.controls, select, option {
+    font-size: 25px;
+}
